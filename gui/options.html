@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="linkers/lse-app.js"></script>
+  </head>
+  <body>
+    <button><a href="index.html">Back</a></button>
+
+    <div class="option-metric-options">
+      <div class="option-block">
+        <div><p>Total revenue</p><input id="All" type="checkbox"></div>
+        <div><p>Operating profit</p><input id="Ratios" type="checkbox"></div>
+        <div><p>Net interest</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Other non operating income/expense</p><input id="Balance" type="checkbox"></div>
+        <div><p>Pre-tax profit</p><input id="Income" type="checkbox"></div>
+        <div><p>After tax profit</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+    </div>
+
+    <div class="option-metric-options">
+      <div class="option-block">
+        <div><p>All</p><input id="All" type="checkbox"></div>
+        <div><p>Ratios</p><input id="Ratios" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+    </div>
+
+    <div class="option-metric-options">
+      <div class="option-block">
+        <div><p>All</p><input id="All" type="checkbox"></div>
+        <div><p>Ratios</p><input id="Ratios" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+      <div class="option-block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox"></div>
+      </div>
+    </div>
+
+    <div class="location-block">
+      <div class="file-locations">
+        <label for="uploader">Upload companies</label>
+        <input id="uploader" name="uploader" type="file" accept=".xlsx">
+      </div>
+    </div>
+
+    <button id="scrape-button" onclick="scrape_financials()">Scrape!</button>
+  </body>
+</html>

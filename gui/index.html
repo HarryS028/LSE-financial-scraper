@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="linkers/lse-app.js"></script>
+  </head>
+  <body>
+    <a href="help.html">How do I use the scraper?</a>
+
+    <div class="header">
+      <h1>LSE web scraper</h1>
+    </div>
+
+    <div class="selection">
+      Group selection
+    </div>
+
+    <div class="metric-options">
+      <div class="block">
+        <div><p>All</p><input id="All" type="checkbox" onclick="toggle_all()"></div>
+        <div><p>Ratios</p><input id="Ratios" type="checkbox" onclick="toggle_checks()"></div>
+      </div>
+      <div class="block">
+        <div><p>Balance sheet</p><input id="Balance" type="checkbox" onclick="toggle_checks()"></div>
+        <div><p>Income statement</p><input id="Income" type="checkbox" onclick="toggle_checks()"></div>
+      </div>
+    </div>
+    
+    <div class="location-block">
+      <div class="file-locations">
+        <label for="uploader">Upload companies</label>
+        <input id="uploader" name="uploader" type="file" accept=".xlsx">
+      </div>
+    </div>
+
+    <button id="scrape-button" onclick="scrape_financials()">Scrape!</button>
+  </body>
+</html>
